@@ -122,6 +122,10 @@ class AlienInvasion:
             self.bullets, self.aliens, True, True
         )
 
+        if collisions:
+            self.stats.score += self.settings.alien_points
+            self.sb.prep_score()
+            
         # Создание нового флота
         if not self.aliens:
             self.bullets.empty()

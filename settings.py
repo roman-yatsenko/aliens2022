@@ -33,6 +33,9 @@ class Settings:
         
         self.fleet_direction = 1
         # 1 - вправо, -1 - влево
+
+        # Подсчет очков
+        self.alien_points = 50
         
     def increase_speed(self):
         """Увеличивает настройки скорости"""
